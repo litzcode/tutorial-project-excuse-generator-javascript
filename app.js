@@ -4,10 +4,10 @@ function onLoad() {
     let what = ['my homework', 'the keys', 'the car'];
     let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
 
-    let randomWho = who[Math.floor(Math.random()*4)];
-    let randomAction = action[Math.floor(Math.random()*4)];
-    let randomWhat = what[Math.floor(Math.random()*3)];
-    let randomWhen = when[Math.floor(Math.random()*5)];
+    let randomWho = who[Math.floor(Math.random()*who.length)];
+    let randomAction = action[Math.floor(Math.random()*action.length)];
+    let randomWhat = what[Math.floor(Math.random()*what.length)];
+    let randomWhen = when[Math.floor(Math.random()*when.length)];
 
     let excuse = randomWho.concat(" ",randomAction," ",randomWhat," ",randomWhen);
         
